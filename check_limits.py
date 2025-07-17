@@ -9,7 +9,7 @@ def is_soc_ok(soc1):
   if soc < 20 or soc > 80:
     return False
     print('State of Charge is out of range!')
- else:
+  else:
     return True
 
 def is_charge_ok(c1):
