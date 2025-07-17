@@ -19,9 +19,9 @@ def is_charge_ok(c1):
     return True
 
 def battery_is_ok(temperature, soc, charge_rate):
-  is_temperature_ok(temperature)
+  return all (is_temperature_ok(temperature)
   is_soc_ok(soc)
-  is_charge_ok(charge_rate)
+  is_charge_ok(charge_rate))
 
 
 if __name__ == '__main__':
