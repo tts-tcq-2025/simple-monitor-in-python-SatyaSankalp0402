@@ -1,7 +1,6 @@
 def is_temperature_ok(temp):
   if temp >=0 and temp <= 45:
     return True
-    break
   print('Temperature is out of range!')
   return False
 
