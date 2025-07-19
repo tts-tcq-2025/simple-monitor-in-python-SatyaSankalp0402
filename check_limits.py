@@ -1,8 +1,9 @@
 def is_temperature_ok(temp):
-  if temp >=0 and temp <= 45:
+  if temp < 0 or temp > 45:
+    print('Temperature is out of range!')
+    return False
+  else:
     return True
-  print('Temperature is out of range!')
-  return False
 
 def is_soc_ok(soc1):
   if soc1 < 20 or soc1 > 80:
