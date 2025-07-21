@@ -7,8 +7,8 @@ def is_temperature_ok(temp):
 
 def is_soc_ok(soc1):
   if soc1 < 20 or soc1 > 80:
-    return False
     print('State of Charge is out of range!')
+    return False
   else:
     return True
 
